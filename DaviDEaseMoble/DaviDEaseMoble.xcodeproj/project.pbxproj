@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05FD8A8A1E1CDFBA00AA21B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FD8A891E1CDFBA00AA21B9 /* main.m */; };
+		05FD8A8D1E1CDFBA00AA21B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FD8A8C1E1CDFBA00AA21B9 /* AppDelegate.m */; };
+		05FD8A901E1CDFBA00AA21B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FD8A8F1E1CDFBA00AA21B9 /* ViewController.m */; };
+		05FD8A931E1CDFBA00AA21B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FD8A911E1CDFBA00AA21B9 /* Main.storyboard */; };
+		05FD8A951E1CDFBA00AA21B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05FD8A941E1CDFBA00AA21B9 /* Assets.xcassets */; };
+		05FD8A981E1CDFBA00AA21B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FD8A961E1CDFBA00AA21B9 /* LaunchScreen.storyboard */; };
+		05FD8AA31E1CDFBA00AA21B9 /* DaviDEaseMobleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FD8AA21E1CDFBA00AA21B9 /* DaviDEaseMobleTests.m */; };
+		05FD8AAE1E1CDFBA00AA21B9 /* DaviDEaseMobleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FD8AAD1E1CDFBA00AA21B9 /* DaviDEaseMobleUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05FD8A9F1E1CDFBA00AA21B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05FD8A7D1E1CDFBA00AA21B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05FD8A841E1CDFBA00AA21B9;
+			remoteInfo = DaviDEaseMoble;
+		};
+		05FD8AAA1E1CDFBA00AA21B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05FD8A7D1E1CDFBA00AA21B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05FD8A841E1CDFBA00AA21B9;
+			remoteInfo = DaviDEaseMoble;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05FD8A851E1CDFBA00AA21B9 /* DaviDEaseMoble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaviDEaseMoble.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05FD8A891E1CDFBA00AA21B9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05FD8A8B1E1CDFBA00AA21B9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		05FD8A8C1E1CDFBA00AA21B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		05FD8A8E1E1CDFBA00AA21B9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		05FD8A8F1E1CDFBA00AA21B9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		05FD8A921E1CDFBA00AA21B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05FD8A941E1CDFBA00AA21B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05FD8A971E1CDFBA00AA21B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05FD8A991E1CDFBA00AA21B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05FD8A9E1E1CDFBA00AA21B9 /* DaviDEaseMobleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaviDEaseMobleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05FD8AA21E1CDFBA00AA21B9 /* DaviDEaseMobleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DaviDEaseMobleTests.m; sourceTree = "<group>"; };
+		05FD8AA41E1CDFBA00AA21B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05FD8AA91E1CDFBA00AA21B9 /* DaviDEaseMobleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaviDEaseMobleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05FD8AAD1E1CDFBA00AA21B9 /* DaviDEaseMobleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DaviDEaseMobleUITests.m; sourceTree = "<group>"; };
+		05FD8AAF1E1CDFBA00AA21B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05FD8A821E1CDFBA00AA21B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FD8A9B1E1CDFBA00AA21B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FD8AA61E1CDFBA00AA21B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05FD8A7C1E1CDFBA00AA21B9 = {
+			isa = PBXGroup;
+			children = (
+				05FD8A871E1CDFBA00AA21B9 /* DaviDEaseMoble */,
+				05FD8AA11E1CDFBA00AA21B9 /* DaviDEaseMobleTests */,
+				05FD8AAC1E1CDFBA00AA21B9 /* DaviDEaseMobleUITests */,
+				05FD8A861E1CDFBA00AA21B9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05FD8A861E1CDFBA00AA21B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05FD8A851E1CDFBA00AA21B9 /* DaviDEaseMoble.app */,
+				05FD8A9E1E1CDFBA00AA21B9 /* DaviDEaseMobleTests.xctest */,
+				05FD8AA91E1CDFBA00AA21B9 /* DaviDEaseMobleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05FD8A871E1CDFBA00AA21B9 /* DaviDEaseMoble */ = {
+			isa = PBXGroup;
+			children = (
+				05FD8A8B1E1CDFBA00AA21B9 /* AppDelegate.h */,
+				05FD8A8C1E1CDFBA00AA21B9 /* AppDelegate.m */,
+				05FD8A8E1E1CDFBA00AA21B9 /* ViewController.h */,
+				05FD8A8F1E1CDFBA00AA21B9 /* ViewController.m */,
+				05FD8A911E1CDFBA00AA21B9 /* Main.storyboard */,
+				05FD8A941E1CDFBA00AA21B9 /* Assets.xcassets */,
+				05FD8A961E1CDFBA00AA21B9 /* LaunchScreen.storyboard */,
+				05FD8A991E1CDFBA00AA21B9 /* Info.plist */,
+				05FD8A881E1CDFBA00AA21B9 /* Supporting Files */,
+			);
+			path = DaviDEaseMoble;
+			sourceTree = "<group>";
+		};
+		05FD8A881E1CDFBA00AA21B9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				05FD8A891E1CDFBA00AA21B9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		05FD8AA11E1CDFBA00AA21B9 /* DaviDEaseMobleTests */ = {
+			isa = PBXGroup;
+			children = (
+				05FD8AA21E1CDFBA00AA21B9 /* DaviDEaseMobleTests.m */,
+				05FD8AA41E1CDFBA00AA21B9 /* Info.plist */,
+			);
+			path = DaviDEaseMobleTests;
+			sourceTree = "<group>";
+		};
+		05FD8AAC1E1CDFBA00AA21B9 /* DaviDEaseMobleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				05FD8AAD1E1CDFBA00AA21B9 /* DaviDEaseMobleUITests.m */,
+				05FD8AAF1E1CDFBA00AA21B9 /* Info.plist */,
+			);
+			path = DaviDEaseMobleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05FD8A841E1CDFBA00AA21B9 /* DaviDEaseMoble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05FD8AB21E1CDFBA00AA21B9 /* Build configuration list for PBXNativeTarget "DaviDEaseMoble" */;
+			buildPhases = (
+				05FD8A811E1CDFBA00AA21B9 /* Sources */,
+				05FD8A821E1CDFBA00AA21B9 /* Frameworks */,
+				05FD8A831E1CDFBA00AA21B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DaviDEaseMoble;
+			productName = DaviDEaseMoble;
+			productReference = 05FD8A851E1CDFBA00AA21B9 /* DaviDEaseMoble.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05FD8A9D1E1CDFBA00AA21B9 /* DaviDEaseMobleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05FD8AB51E1CDFBA00AA21B9 /* Build configuration list for PBXNativeTarget "DaviDEaseMobleTests" */;
+			buildPhases = (
+				05FD8A9A1E1CDFBA00AA21B9 /* Sources */,
+				05FD8A9B1E1CDFBA00AA21B9 /* Frameworks */,
+				05FD8A9C1E1CDFBA00AA21B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05FD8AA01E1CDFBA00AA21B9 /* PBXTargetDependency */,
+			);
+			name = DaviDEaseMobleTests;
+			productName = DaviDEaseMobleTests;
+			productReference = 05FD8A9E1E1CDFBA00AA21B9 /* DaviDEaseMobleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05FD8AA81E1CDFBA00AA21B9 /* DaviDEaseMobleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05FD8AB81E1CDFBA00AA21B9 /* Build configuration list for PBXNativeTarget "DaviDEaseMobleUITests" */;
+			buildPhases = (
+				05FD8AA51E1CDFBA00AA21B9 /* Sources */,
+				05FD8AA61E1CDFBA00AA21B9 /* Frameworks */,
+				05FD8AA71E1CDFBA00AA21B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05FD8AAB1E1CDFBA00AA21B9 /* PBXTargetDependency */,
+			);
+			name = DaviDEaseMobleUITests;
+			productName = DaviDEaseMobleUITests;
+			productReference = 05FD8AA91E1CDFBA00AA21B9 /* DaviDEaseMobleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05FD8A7D1E1CDFBA00AA21B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = DaviD;
+				TargetAttributes = {
+					05FD8A841E1CDFBA00AA21B9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = V3VWCC65R7;
+						ProvisioningStyle = Automatic;
+					};
+					05FD8A9D1E1CDFBA00AA21B9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = V3VWCC65R7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 05FD8A841E1CDFBA00AA21B9;
+					};
+					05FD8AA81E1CDFBA00AA21B9 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = V3VWCC65R7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 05FD8A841E1CDFBA00AA21B9;
+					};
+				};
+			};
+			buildConfigurationList = 05FD8A801E1CDFBA00AA21B9 /* Build configuration list for PBXProject "DaviDEaseMoble" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05FD8A7C1E1CDFBA00AA21B9;
+			productRefGroup = 05FD8A861E1CDFBA00AA21B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05FD8A841E1CDFBA00AA21B9 /* DaviDEaseMoble */,
+				05FD8A9D1E1CDFBA00AA21B9 /* DaviDEaseMobleTests */,
+				05FD8AA81E1CDFBA00AA21B9 /* DaviDEaseMobleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05FD8A831E1CDFBA00AA21B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05FD8A981E1CDFBA00AA21B9 /* LaunchScreen.storyboard in Resources */,
+				05FD8A951E1CDFBA00AA21B9 /* Assets.xcassets in Resources */,
+				05FD8A931E1CDFBA00AA21B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FD8A9C1E1CDFBA00AA21B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FD8AA71E1CDFBA00AA21B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05FD8A811E1CDFBA00AA21B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05FD8A901E1CDFBA00AA21B9 /* ViewController.m in Sources */,
+				05FD8A8D1E1CDFBA00AA21B9 /* AppDelegate.m in Sources */,
+				05FD8A8A1E1CDFBA00AA21B9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FD8A9A1E1CDFBA00AA21B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05FD8AA31E1CDFBA00AA21B9 /* DaviDEaseMobleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05FD8AA51E1CDFBA00AA21B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05FD8AAE1E1CDFBA00AA21B9 /* DaviDEaseMobleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05FD8AA01E1CDFBA00AA21B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05FD8A841E1CDFBA00AA21B9 /* DaviDEaseMoble */;
+			targetProxy = 05FD8A9F1E1CDFBA00AA21B9 /* PBXContainerItemProxy */;
+		};
+		05FD8AAB1E1CDFBA00AA21B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05FD8A841E1CDFBA00AA21B9 /* DaviDEaseMoble */;
+			targetProxy = 05FD8AAA1E1CDFBA00AA21B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05FD8A911E1CDFBA00AA21B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05FD8A921E1CDFBA00AA21B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		05FD8A961E1CDFBA00AA21B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05FD8A971E1CDFBA00AA21B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05FD8AB01E1CDFBA00AA21B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05FD8AB11E1CDFBA00AA21B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05FD8AB31E1CDFBA00AA21B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V3VWCC65R7;
+				INFOPLIST_FILE = DaviDEaseMoble/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dlwxDaviD.DaviDEaseMoble;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		05FD8AB41E1CDFBA00AA21B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V3VWCC65R7;
+				INFOPLIST_FILE = DaviDEaseMoble/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dlwxDaviD.DaviDEaseMoble;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		05FD8AB61E1CDFBA00AA21B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V3VWCC65R7;
+				INFOPLIST_FILE = DaviDEaseMobleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dlwxDaviD.DaviDEaseMobleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DaviDEaseMoble.app/DaviDEaseMoble";
+			};
+			name = Debug;
+		};
+		05FD8AB71E1CDFBA00AA21B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V3VWCC65R7;
+				INFOPLIST_FILE = DaviDEaseMobleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dlwxDaviD.DaviDEaseMobleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DaviDEaseMoble.app/DaviDEaseMoble";
+			};
+			name = Release;
+		};
+		05FD8AB91E1CDFBA00AA21B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = V3VWCC65R7;
+				INFOPLIST_FILE = DaviDEaseMobleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dlwxDaviD.DaviDEaseMobleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DaviDEaseMoble;
+			};
+			name = Debug;
+		};
+		05FD8ABA1E1CDFBA00AA21B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = V3VWCC65R7;
+				INFOPLIST_FILE = DaviDEaseMobleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dlwxDaviD.DaviDEaseMobleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DaviDEaseMoble;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05FD8A801E1CDFBA00AA21B9 /* Build configuration list for PBXProject "DaviDEaseMoble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05FD8AB01E1CDFBA00AA21B9 /* Debug */,
+				05FD8AB11E1CDFBA00AA21B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05FD8AB21E1CDFBA00AA21B9 /* Build configuration list for PBXNativeTarget "DaviDEaseMoble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05FD8AB31E1CDFBA00AA21B9 /* Debug */,
+				05FD8AB41E1CDFBA00AA21B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		05FD8AB51E1CDFBA00AA21B9 /* Build configuration list for PBXNativeTarget "DaviDEaseMobleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05FD8AB61E1CDFBA00AA21B9 /* Debug */,
+				05FD8AB71E1CDFBA00AA21B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		05FD8AB81E1CDFBA00AA21B9 /* Build configuration list for PBXNativeTarget "DaviDEaseMobleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05FD8AB91E1CDFBA00AA21B9 /* Debug */,
+				05FD8ABA1E1CDFBA00AA21B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05FD8A7D1E1CDFBA00AA21B9 /* Project object */;
+}
