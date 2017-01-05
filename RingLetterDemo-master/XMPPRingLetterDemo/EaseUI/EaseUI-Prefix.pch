@@ -14,5 +14,27 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #ifdef __OBJC__
-    #import <UIKit/UIKit.h>
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "CMHHeader.h"
+#import "CMHDemoDefine.h"
+
+#import "UILabel+Font.h"
+#import "UITextField+Font.h"
+#import "CMCustomViewFactory.h"
+#import "CMHTTPSessionManager.h"
+#import "CMHttpRequestModel.h"
+#import "CMHttpResponseModel.h"
+
+#import "DisplayHelper.h"
+#import "CMHttpStateTools.h"
+#import "XMUserDefaults.h"
+
+// 环信方面
+
+#import "EaseUI.h"
+#import "RingLetter.pch"
+
 #endif

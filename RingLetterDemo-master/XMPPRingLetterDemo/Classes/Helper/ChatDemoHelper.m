@@ -122,12 +122,12 @@
     if (!isAcitivity) {// 非活跃状态
         //    发送本地通知
         if (NSClassFromString(@"UNUserNotificationCenter")) {// iOS 10新推出的推送类
-            UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:0.01 repeats:NO];
-            UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
-            content.sound = [UNNotificationSound defaultSound];
-            content.body =aMessage;
-            UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:[[NSNumber numberWithDouble:[NSDate timeIntervalSinceReferenceDate] * 1000] stringValue] content:content trigger:trigger];
-            [[UNUserNotificationCenter currentNotificationCenter] addNotificationRequest:request withCompletionHandler:nil];
+//            UNTimeIntervalNotificationTrigger *trigger = [UNTimeIntervalNotificationTrigger triggerWithTimeInterval:0.01 repeats:NO];
+//            UNMutableNotificationContent *content = [[UNMutableNotificationContent alloc] init];
+//            content.sound = [UNNotificationSound defaultSound];
+//            content.body =aMessage;
+//            UNNotificationRequest *request = [UNNotificationRequest requestWithIdentifier:[[NSNumber numberWithDouble:[NSDate timeIntervalSinceReferenceDate] * 1000] stringValue] content:content trigger:trigger];
+//            [[UNUserNotificationCenter currentNotificationCenter] addNotificationRequest:request withCompletionHandler:nil];
         }else {
             
             UILocalNotification *notification = [[UILocalNotification alloc] init];

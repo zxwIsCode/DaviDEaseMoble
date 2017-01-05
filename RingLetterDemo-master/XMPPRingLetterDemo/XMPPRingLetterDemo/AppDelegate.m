@@ -12,6 +12,7 @@
 #import "ToobarHelper.h"
 #import "MainViewController.h"
 #import "IQKeyboardManager.h"
+#import "XMUserDefaults.h"
 
 
 @interface AppDelegate ()
@@ -30,10 +31,10 @@
     [[EMClient sharedClient] initializeSDKWithOptions:options];
     
     // 推送类UNUserNotificationCenter（iOS 10专用）存在的话，就设置推送的代理为Application
-    if (NSClassFromString(@"UNUserNotificationCenter")) {
-        [UNUserNotificationCenter currentNotificationCenter].delegate = self;
-    }
-    
+//    if (NSClassFromString(@"UNUserNotificationCenter")) {
+//        [UNUserNotificationCenter currentNotificationCenter].delegate = self;
+//    }
+//    
     [self settingKeyboardAuto];
 
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
