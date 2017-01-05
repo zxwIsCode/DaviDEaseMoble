@@ -30,7 +30,6 @@
 #import <UIKit/UIKit.h>
 
 #import "EaseUI.h"
-#import "ChatDemoHelper.h"
 
 // iOS 10专用的通知
 #import <UserNotifications/UserNotifications.h>

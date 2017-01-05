@@ -10,4 +10,7 @@
 
 @interface CMMainTabBarViewController : UITabBarController
 
+// 统计未读消息数
+-(void)setupUnreadMessageCount;
+
 @end

@@ -10,4 +10,7 @@
 
 @interface XLAddressViewController : CMBaseViewController
 
+//群组变化时，更新群组页面
+- (void)reloadGroupView;
+
 @end

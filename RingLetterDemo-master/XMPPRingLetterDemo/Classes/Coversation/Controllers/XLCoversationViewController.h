@@ -10,4 +10,7 @@
 
 @interface XLCoversationViewController : CMBaseViewController
 
+- (void)refreshDataSource;
+
+
 @end

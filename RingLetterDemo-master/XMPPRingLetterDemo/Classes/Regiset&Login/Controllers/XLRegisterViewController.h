@@ -8,6 +8,6 @@
 
 #import "CMBaseViewController.h"
 
-@interface RegisterViewController : CMBaseViewController
+@interface XLRegisterViewController : CMBaseViewController
 
 @end

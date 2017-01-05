@@ -35,6 +35,8 @@
 // 环信方面
 
 #import "EaseUI.h"
+#import "EMSDK.h"
 #import "RingLetter.pch"
+#import "ChatDemoHelper.h"
 
 #endif

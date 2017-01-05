@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "CMMainTabBarViewController.h"
+#import "EMSDK.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+// 网络连接状态
+{
+    EMConnectionState _connectionState;
+}
 @property (strong, nonatomic) UIWindow *window;
 
-@property (nonatomic,strong)CMMainTabBarViewController *mainVC;
+@property (nonatomic,strong)CMMainTabBarViewController *mainController;
 
 @end
 

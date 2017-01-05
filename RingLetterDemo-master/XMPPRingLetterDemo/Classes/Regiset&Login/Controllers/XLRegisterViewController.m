@@ -6,11 +6,11 @@
 //  Copyright © 2016年 李保东. All rights reserved.
 //
 
-#import "RegisterViewController.h"
-#import "ChatDemoHelper.h"
+#import "XLRegisterViewController.h"
+//#import "ChatDemoHelper.h"
 #import "ToobarHelper.h"
 
-@interface RegisterViewController ()
+@interface XLRegisterViewController ()
 
 // 用户名
 @property(nonatomic,strong)UITextField *userTextFeild;
@@ -24,7 +24,7 @@
 
 @end
 
-@implementation RegisterViewController
+@implementation XLRegisterViewController
 
 #pragma mark - Init
 - (void)viewDidLoad {
@@ -109,13 +109,13 @@
                         [[EMClient sharedClient]migrateDatabaseToLatestSDK];
                         dispatch_async(dispatch_get_main_queue(), ^{
                             // 获得所有的群组列表
-                            [[ChatDemoHelper shareHelper] asyncGroupFromServer];
-                            // 获得所有的会话列表
-                            [[ChatDemoHelper shareHelper] asyncConversationFromDB];
-
-//                            // 获得推送属性暂不用
-//                            [[ChatDemoHelper shareHelper] asyncPushOptions];
-                            [MBProgressHUD hideAllHUDsForView:ws.view animated:YES];
+//                            [[ChatDemoHelper shareHelper] asyncGroupFromServer];
+//                            // 获得所有的会话列表
+//                            [[ChatDemoHelper shareHelper] asyncConversationFromDB];
+//
+////                            // 获得推送属性暂不用
+////                            [[ChatDemoHelper shareHelper] asyncPushOptions];
+//                            [MBProgressHUD hideAllHUDsForView:ws.view animated:YES];
                             
                             [ws saveLastUserName:self.userTextFeild.text];
                         });

@@ -8,20 +8,19 @@
 
 #import "ToobarHelper.h"
 #import "CMMainTabBarViewController.h"
-#import "RegisterViewController.h"
-#import "ChatDemoHelper.h"
+//#import "ChatDemoHelper.h"
 @implementation ToobarHelper
 
 +(void)choseAllRootViewControllersisTabBar:(BOOL)isMain andWindow:(UIWindow *)window {
-    if (isMain) {
-        CMMainTabBarViewController *main =[[CMMainTabBarViewController alloc]init];
-        [ChatDemoHelper shareHelper].mainVC;
-          window.rootViewController =main;
-    }else {
-        [ChatDemoHelper shareHelper].mainVC =nil;
-        window.rootViewController =[[RegisterViewController alloc]init];
-    }
-  
+//    if (isMain) {
+//        CMMainTabBarViewController *main =[[CMMainTabBarViewController alloc]init];
+//        [ChatDemoHelper shareHelper].mainVC;
+//          window.rootViewController =main;
+//    }else {
+//        [ChatDemoHelper shareHelper].mainVC =nil;
+//        window.rootViewController =[[RegisterViewController alloc]init];
+//    }
+//  
 }
 
 @end
