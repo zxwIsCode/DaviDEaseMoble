@@ -7,18 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MainViewController.h"
-#import "ConversationViewController.h"
-#import "ContactViewController.h"
-#import "SettingViewController.h"
+#import "CMMainTabBarViewController.h"
+#import "XLCoversationViewController.h"
+#import "XLAddressViewController.h"
+#import "XLSettingViewController.h"
 
 @interface ChatDemoHelper : NSObject<IEMContactManager>
 
-@property (nonatomic, weak) ContactViewController *contactViewVC;
+@property (nonatomic, weak) XLAddressViewController *contactViewVC;
 
-@property (nonatomic, weak) ConversationViewController *conversationListVC;
+@property (nonatomic, weak) XLCoversationViewController *conversationListVC;
 
-@property (nonatomic, weak) MainViewController *mainVC;
+@property (nonatomic, weak) CMMainTabBarViewController *mainVC;
 
 + (instancetype)shareHelper;
 

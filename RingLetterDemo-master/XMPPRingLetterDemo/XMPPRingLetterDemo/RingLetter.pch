@@ -21,7 +21,7 @@
 #ifdef __OBJC__(第一个坑，只允许OC语言写的文件引用下面的库)
 
 #import "EMSDK.h"
-#import "NavBaseViewController.h"
+#import "CMNavViewController.h"
 #import "UIViewController+HUD.h"
 #import "MBProgressHUD.h"
 #import "XMUserDefaults.h"

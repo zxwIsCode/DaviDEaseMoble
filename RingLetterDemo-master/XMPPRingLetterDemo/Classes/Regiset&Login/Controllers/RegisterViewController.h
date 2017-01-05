@@ -6,8 +6,8 @@
 //  Copyright © 2016年 李保东. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "CMBaseViewController.h"
 
-@interface RegisterViewController : BaseViewController
+@interface RegisterViewController : CMBaseViewController
 
 @end

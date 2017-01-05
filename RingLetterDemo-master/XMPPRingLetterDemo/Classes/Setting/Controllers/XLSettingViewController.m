@@ -1,18 +1,18 @@
 //
-//  SettingViewController.m
-//  XMPPRingLetterDemo
+//  CMSendTaskViewController.m
+//  ComeMoneyHere
 //
-//  Created by 李保东 on 16/11/12.
-//  Copyright © 2016年 李保东. All rights reserved.
+//  Created by 李保东 on 16/12/29.
+//  Copyright © 2016年 DaviD. All rights reserved.
 //
 
-#import "SettingViewController.h"
+#import "XLSettingViewController.h"
 
-@interface SettingViewController ()
+@interface XLSettingViewController ()
 
 @end
 
-@implementation SettingViewController
+@implementation XLSettingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

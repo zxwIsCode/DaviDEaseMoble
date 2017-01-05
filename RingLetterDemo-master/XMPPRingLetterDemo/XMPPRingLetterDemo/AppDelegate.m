@@ -10,7 +10,7 @@
 //#import "EMSDK.h"
 #import "RegisterViewController.h"
 #import "ToobarHelper.h"
-#import "MainViewController.h"
+#import "CMMainTabBarViewController.h"
 #import "IQKeyboardManager.h"
 #import "XMUserDefaults.h"
 

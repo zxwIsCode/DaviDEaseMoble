@@ -138,7 +138,7 @@
         }
     }
     // 刷新对应的界面的View
-    [self.contactViewVC reloadApplyView];
+//    [self.contactViewVC reloadApplyView];
 }
 /*!
  @method

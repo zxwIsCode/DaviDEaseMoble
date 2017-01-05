@@ -7,14 +7,14 @@
 //
 
 #import "ToobarHelper.h"
-#import "MainViewController.h"
+#import "CMMainTabBarViewController.h"
 #import "RegisterViewController.h"
 #import "ChatDemoHelper.h"
 @implementation ToobarHelper
 
 +(void)choseAllRootViewControllersisTabBar:(BOOL)isMain andWindow:(UIWindow *)window {
     if (isMain) {
-        MainViewController *main =[[MainViewController alloc]init];
+        CMMainTabBarViewController *main =[[CMMainTabBarViewController alloc]init];
         [ChatDemoHelper shareHelper].mainVC;
           window.rootViewController =main;
     }else {

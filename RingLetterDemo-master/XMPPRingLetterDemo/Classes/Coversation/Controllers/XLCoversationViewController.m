@@ -1,24 +1,30 @@
 //
-//  BaseViewController.m
-//  XMPPRingLetterDemo
+//  CMCommondViewController.m
+//  ComeMoneyHere
 //
-//  Created by 李保东 on 16/11/11.
-//  Copyright © 2016年 李保东. All rights reserved.
+//  Created by 李保东 on 16/11/15.
+//  Copyright © 2016年 DaviD. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "XLCoversationViewController.h"
 
-@interface BaseViewController ()
+@interface XLCoversationViewController ()
 
 @end
 
-@implementation BaseViewController
+@implementation XLCoversationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    self.view.backgroundColor =[UIColor redColor];
     // Do any additional setup after loading the view.
 }
 
+#pragma mark - 子类继承
+-(CMNavType)getNavType {
+    return CMNavTypeNone;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
