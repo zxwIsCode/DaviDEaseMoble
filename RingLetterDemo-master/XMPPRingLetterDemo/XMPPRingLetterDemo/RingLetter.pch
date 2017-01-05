@@ -1,0 +1,42 @@
+//
+//  RingLetter.pch
+//  XMPPRingLetterDemo
+//
+//  Created by 李保东 on 16/11/11.
+//  Copyright © 2016年 李保东. All rights reserved.
+//
+
+//#ifndef RingLetter_pch
+//
+//
+//#define RingLetter_pch
+//
+//#endif /* RingLetter_pch */
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#ifdef __OBJC__(第一个坑，只允许OC语言写的文件引用下面的库)
+
+#import "EMSDK.h"
+#import "NavBaseViewController.h"
+#import "UtilsMacro.h"
+#import "UIViewController+HUD.h"
+#import "MBProgressHUD.h"
+#import "XMUserDefaults.h"
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+#import "EaseUI.h"
+#import "ChatDemoHelper.h"
+
+// iOS 10专用的通知
+#import <UserNotifications/UserNotifications.h>
+
+
+#define isFirstLogin @"isFirstLogin"
+
+#endif
