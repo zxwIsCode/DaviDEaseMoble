@@ -130,6 +130,7 @@
 		0561F1251E1DDE09003AE928 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0561F1141E1DDE09003AE928 /* UIImageView+WebCache.m */; };
 		0561F1261E1DDE09003AE928 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0561F1161E1DDE09003AE928 /* UIView+WebCacheOperation.m */; };
 		0561F12B1E1DDEB5003AE928 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0561F1281E1DDEB5003AE928 /* libWeChatSDK.a */; };
+		0573AB361E209CA900D6860A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0573AB351E209CA800D6860A /* MapKit.framework */; };
 		05FCECD01DD6A1F1000435DC /* XMUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FCECCF1DD6A1F1000435DC /* XMUserDefaults.m */; };
 		05FCED601DD6B604000435DC /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 05FCECE51DD6B603000435DC /* 114.png */; };
 		05FCED611DD6B604000435DC /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 05FCECE61DD6B603000435DC /* 120.png */; };
@@ -679,6 +680,8 @@
 		0561F1281E1DDEB5003AE928 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
 		0561F1291E1DDEB5003AE928 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		0561F12A1E1DDEB5003AE928 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		0573AB341E20968500D6860A /* XMPPRingLetterDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XMPPRingLetterDemo.entitlements; sourceTree = "<group>"; };
+		0573AB351E209CA800D6860A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		05FCECCE1DD6A1F1000435DC /* XMUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMUserDefaults.h; sourceTree = "<group>"; };
 		05FCECCF1DD6A1F1000435DC /* XMUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMUserDefaults.m; sourceTree = "<group>"; };
 		05FCECE51DD6B603000435DC /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
@@ -1092,6 +1095,7 @@
 			files = (
 				05FCF2BF1DD6FD68000435DC /* libopencore-amrnb.a in Frameworks */,
 				0547104C1DD59D3200B4DB51 /* libsqlite3.tbd in Frameworks */,
+				0573AB361E209CA900D6860A /* MapKit.framework in Frameworks */,
 				0547104A1DD59D2900B4DB51 /* libstdc++.6.0.9.tbd in Frameworks */,
 				054710481DD59D1D00B4DB51 /* libz.tbd in Frameworks */,
 				054710461DD59D1300B4DB51 /* libc++.tbd in Frameworks */,
@@ -1233,6 +1237,7 @@
 		05470FE11DD5977800B4DB51 /* XMPPRingLetterDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0573AB341E20968500D6860A /* XMPPRingLetterDemo.entitlements */,
 				05470FE51DD5977800B4DB51 /* AppDelegate.h */,
 				05470FE61DD5977800B4DB51 /* AppDelegate.m */,
 				05FD72C91E1DF6A30013D674 /* AppDelegate+EaseMob.h */,
@@ -1352,6 +1357,7 @@
 		0547103A1DD59CD000B4DB51 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0573AB351E209CA800D6860A /* MapKit.framework */,
 				0547104D1DD59D5700B4DB51 /* libiconv.tbd */,
 				0547104B1DD59D3200B4DB51 /* libsqlite3.tbd */,
 				054710491DD59D2900B4DB51 /* libstdc++.6.0.9.tbd */,
@@ -2880,8 +2886,19 @@
 				TargetAttributes = {
 					05470FDE1DD5977800B4DB51 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = V3VWCC65R7;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = TJ83QZ77Y8;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					05470FF71DD5977800B4DB51 = {
 						CreatedOnToolsVersion = 8.0;
@@ -3453,7 +3470,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V3VWCC65R7;
+				CODE_SIGN_ENTITLEMENTS = XMPPRingLetterDemo/XMPPRingLetterDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = TJ83QZ77Y8;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3473,8 +3492,10 @@
 					"$(PROJECT_DIR)/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb",
 					"$(PROJECT_DIR)/Vendor/SDKExport",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dlwxDaviD.XMPPRingLetterDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = dlwxDaviD.TestHuanXin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "35f893ba-c7ed-43c1-a20c-f6b8c4cb6f85";
+				PROVISIONING_PROFILE_SPECIFIER = TestDaviD;
 			};
 			name = Debug;
 		};
@@ -3482,7 +3503,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V3VWCC65R7;
+				CODE_SIGN_ENTITLEMENTS = XMPPRingLetterDemo/XMPPRingLetterDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = TJ83QZ77Y8;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3502,8 +3525,10 @@
 					"$(PROJECT_DIR)/EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb",
 					"$(PROJECT_DIR)/Vendor/SDKExport",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dlwxDaviD.XMPPRingLetterDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = dlwxDaviD.TestHuanXin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "35f893ba-c7ed-43c1-a20c-f6b8c4cb6f85";
+				PROVISIONING_PROFILE_SPECIFIER = TestDaviD;
 			};
 			name = Release;
 		};

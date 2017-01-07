@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Test</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -20,6 +22,52 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>DaviD环信需要您的同意,才能访问媒体资料库</string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>DaviD环信需要您的同意,才能访问蓝牙</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>DaviD环信需要您的同意,才能访问日历</string>
+	<key>NSCameraUsageDescription</key>
+	<string>DaviD环信需要您的同意,才能访问相机</string>
+	<key>NSContactsUsageDescription</key>
+	<string>DaviD环信需要您的同意,才能访问通讯录</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>DaviD环信需要您的同意,才能访问健康分享</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>DaviD环信需要您的同意,才能访问健康更新 </string>
+	<key>NSHomeKitUsageDescription</key>
+	<string>DaviD环信需要您的同意,才能访问HomeKit</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>DaviD环信需要您的同意,才能始终访问位置</string>
+	<key>NSLocationUsageDescription</key>
+	<string>DaviD环信需要您的同意,才能访问位置</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>DaviD环信需要您的同意,才能在使用期间访问位置</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>DaviD环信需要您的同意,才能访问麦克风</string>
+	<key>NSMotionUsageDescription</key>
+	<string>DaviD环信需要您的同意,才能访问运动与健身</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>DaviD环信需要您的同意,才能访问相册</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>DaviD环信需要您的同意,才能访问提醒事项</string>
+	<key>NSSiriUsageDescription</key>
+	<string>DaviD环信需要您的同意,才能访问Siri</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>DaviD环信需要您的同意,才能访问语音识别</string>
+	<key>NSVideoSubscriberAccountUsageDescription</key>
+	<string>DaviD环信需要您的同意,才能访问您的视频</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

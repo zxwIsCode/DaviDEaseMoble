@@ -22,8 +22,11 @@
 
 @implementation AppDelegate
 
-#define EaseMobAppKey @"nacker#lzeasemob"
-#define EMSDKApnsCertName @"lzeasemob"
+//#define EaseMobAppKey @"nacker#lzeasemob"
+//#define EMSDKApnsCertName @"lzeasemob"
+
+#define EaseMobAppKey @"1148161111115607#dlwxdavidxmppringletterdemo"
+#define EMSDKApnsCertName @"TestHuanXin"
 
 #pragma mark - UIApplication Methods
 
@@ -65,6 +68,38 @@ didFinishLaunchingWithOptions:launchOptions
 {
     [[EMClient sharedClient] applicationWillEnterForeground:application];
 }
+
+// 收到远程通知 iOS10之前
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    if (_mainController) {
+        [_mainController jumpToChatList];
+    }
+    [self easemobApplication:application didReceiveRemoteNotification:userInfo];
+}
+// 收到本地通知 iOS10之前
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    if (_mainController) {
+        [_mainController didReceiveLocalNotification:notification];
+    }
+}
+// 以下2个方法 iOS10之后的通知
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler
+{
+    NSDictionary *userInfo = notification.request.content.userInfo;
+    [self easemobApplication:[UIApplication sharedApplication] didReceiveRemoteNotification:userInfo];
+}
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)())completionHandler
+{
+    if (_mainController) {
+        [_mainController didReceiveUserNotification:response.notification];
+    }
+    completionHandler();
+}
+
 
 #pragma mark - Init IQKeyboardManager Vendor
 -(void)settingKeyboardAuto {
