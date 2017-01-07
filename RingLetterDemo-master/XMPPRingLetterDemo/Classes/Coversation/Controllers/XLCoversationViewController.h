@@ -12,5 +12,8 @@
 
 - (void)refreshDataSource;
 
+- (void)networkChanged:(EMConnectionState)connectionState;
+
+
 
 @end

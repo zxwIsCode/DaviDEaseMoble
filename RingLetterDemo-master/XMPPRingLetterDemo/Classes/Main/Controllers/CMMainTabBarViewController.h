@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 
 #import <UserNotifications/UserNotifications.h>
+#import "EMClientDelegate.h"
 
 
 @interface CMMainTabBarViewController : UITabBarController
-
+{
+    EMConnectionState _connectionState;
+}
 // 统计未读消息数
 -(void)setupUnreadMessageCount;
 
@@ -23,6 +26,9 @@
 - (void)didReceiveLocalNotification:(UILocalNotification *)notification;
 // 收到通知（iOS10专用）
 - (void)didReceiveUserNotification:(UNNotification *)notification;
+
+- (void)networkChanged:(EMConnectionState)connectionState;
+
 
 
 @end

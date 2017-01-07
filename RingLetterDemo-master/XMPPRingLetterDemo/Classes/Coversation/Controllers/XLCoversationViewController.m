@@ -20,15 +20,24 @@
     self.view.backgroundColor =[UIColor redColor];
     // Do any additional setup after loading the view.
 }
-
+#pragma mark - Private Methods
+- (void)networkChanged:(EMConnectionState)connectionState
+{
+    if (connectionState == EMConnectionDisconnected) {
+//        DDLog(@"网络为链接");
+        mAlertView(@"提示", @"网络未链接")
+//        self.tableView.tableHeaderView = _networkStateView;
+    }
+    else{
+        mAlertView(@"提示", @"网络已链接")
+//        self.tableView.tableHeaderView = nil;
+    }
+}
 #pragma mark - 子类继承
 -(CMNavType)getNavType {
     return CMNavTypeNone;
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 /*
 #pragma mark - Navigation

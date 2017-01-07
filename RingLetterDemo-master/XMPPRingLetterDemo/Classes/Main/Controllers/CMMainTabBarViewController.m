@@ -104,6 +104,13 @@
     
     
 }
+
+// 网络状态变化
+- (void)networkChanged:(EMConnectionState)connectionState
+{
+    _connectionState = connectionState;
+    [self.coversationVC networkChanged:_connectionState];
+}
 #pragma mark - CMCustomTabBarDelegate
 
 -(void)tabBar:(CMCustomTabBar *)tabBar didSelectVC:(NSInteger)lastIndex andNext:(NSInteger)nextIndex {
