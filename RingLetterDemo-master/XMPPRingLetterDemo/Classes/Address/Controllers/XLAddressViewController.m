@@ -7,6 +7,8 @@
 //
 
 #import "XLAddressViewController.h"
+#import "AddFriendViewController.h"
+
 
 @interface XLAddressViewController ()
 
@@ -24,9 +26,19 @@
     self.testArray =@[@"QQ",@"爱心",@"爱心人物"];
     [self testNet];
     
+     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"添加" style:UIBarButtonItemStyleDone target:self action:@selector(addContactAction)];
+    
+    
+    
     
 
     // Do any additional setup after loading the view.
+}
+#pragma mark - Action Methods
+- (void)addContactAction
+{
+    AddFriendViewController *addController = [[AddFriendViewController alloc] init];
+    [self.navigationController pushViewController:addController animated:YES];
 }
 #pragma mark - Test
 

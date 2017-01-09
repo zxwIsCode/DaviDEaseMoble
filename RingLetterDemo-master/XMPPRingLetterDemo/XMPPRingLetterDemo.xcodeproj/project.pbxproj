@@ -156,6 +156,7 @@
 		0573AB8C1E20C49F00D6860A /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0573AB8B1E20C49F00D6860A /* UIImage+Extension.m */; };
 		0573AB8F1E20C59E00D6860A /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0573AB8E1E20C59E00D6860A /* UIColor+Extension.m */; };
 		0573AB921E20DEEF00D6860A /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0573AB911E20DEEF00D6860A /* ChatViewController.m */; };
+		059C4ED01E23732200E158A5 /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 059C4ECF1E23732200E158A5 /* AddFriendViewController.m */; };
 		05FCECD01DD6A1F1000435DC /* XMUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 05FCECCF1DD6A1F1000435DC /* XMUserDefaults.m */; };
 		05FCED601DD6B604000435DC /* 114.png in Resources */ = {isa = PBXBuildFile; fileRef = 05FCECE51DD6B603000435DC /* 114.png */; };
 		05FCED611DD6B604000435DC /* 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 05FCECE61DD6B603000435DC /* 120.png */; };
@@ -756,6 +757,8 @@
 		0573AB8E1E20C59E00D6860A /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
 		0573AB901E20DEEF00D6860A /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
 		0573AB911E20DEEF00D6860A /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		059C4ECE1E23732200E158A5 /* AddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendViewController.h; sourceTree = "<group>"; };
+		059C4ECF1E23732200E158A5 /* AddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendViewController.m; sourceTree = "<group>"; };
 		05FCECCE1DD6A1F1000435DC /* XMUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMUserDefaults.h; sourceTree = "<group>"; };
 		05FCECCF1DD6A1F1000435DC /* XMUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMUserDefaults.m; sourceTree = "<group>"; };
 		05FCECE51DD6B603000435DC /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
@@ -2882,6 +2885,8 @@
 			children = (
 				05FD728F1E1DEB520013D674 /* XLAddressViewController.h */,
 				05FD72901E1DEB520013D674 /* XLAddressViewController.m */,
+				059C4ECE1E23732200E158A5 /* AddFriendViewController.h */,
+				059C4ECF1E23732200E158A5 /* AddFriendViewController.m */,
 				05FD72CF1E1E248B0013D674 /* ApplyViewController.h */,
 				05FD72D01E1E248B0013D674 /* ApplyViewController.m */,
 			);
@@ -3539,6 +3544,7 @@
 				05FCF2D51DD6FD68000435DC /* UIView+MJExtension.m in Sources */,
 				050DEB7F1DD99BCF009D0129 /* IQUIScrollView+Additions.m in Sources */,
 				05FCF33B1DD71504000435DC /* InvitationManager.m in Sources */,
+				059C4ED01E23732200E158A5 /* AddFriendViewController.m in Sources */,
 				0561F11B1E1DDE09003AE928 /* SDWebImageDecoder.m in Sources */,
 				050DEB831DD99BCF009D0129 /* IQUIWindow+Hierarchy.m in Sources */,
 				050DEB851DD99BCF009D0129 /* IQKeyboardReturnKeyHandler.m in Sources */,

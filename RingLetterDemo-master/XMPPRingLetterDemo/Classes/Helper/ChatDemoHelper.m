@@ -62,6 +62,7 @@ static ChatDemoHelper *helper = nil;
 
 #pragma mark - async Data
 
+// 从服务器获取用户的推送属性
 - (void)asyncPushOptions
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -71,7 +72,7 @@ static ChatDemoHelper *helper = nil;
     });
     
 }
-
+// 异步获取用户加入的群组信息
 - (void)asyncGroupFromServer
 {
     __weak typeof(self) weakself = self;
@@ -91,7 +92,7 @@ static ChatDemoHelper *helper = nil;
         }
     });
 }
-
+// 异步获取所有的会话信息
 - (void)asyncConversationFromDB
 {
     __weak typeof(self) weakself = self;

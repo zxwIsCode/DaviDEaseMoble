@@ -22,7 +22,7 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     [self dependOnKindToViewShow];
-    self.view.backgroundColor =[UIColor whiteColor];
+    self.view.backgroundColor =[UIColor brownColor];
 }
 #pragma mark - Private Methods
 -(void)dependOnKindToViewShow {
