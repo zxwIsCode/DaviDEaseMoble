@@ -15,7 +15,7 @@
 #import "CMMainTabBarViewController.h"
 #import "ChatViewController.h"
 
-@interface ChatDemoHelper : NSObject
+@interface ChatDemoHelper : NSObject<EMClientDelegate,EMChatManagerDelegate,EMContactManagerDelegate,EMGroupManagerDelegate,EMChatroomManagerDelegate>
 
 @property (nonatomic, weak) XLAddressViewController *contactViewVC;
 

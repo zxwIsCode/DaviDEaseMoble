@@ -26,6 +26,39 @@ static ChatDemoHelper *helper = nil;
     return helper;
 }
 
+- (void)dealloc
+{
+    [[EMClient sharedClient] removeDelegate:self];
+    [[EMClient sharedClient].groupManager removeDelegate:self];
+    [[EMClient sharedClient].contactManager removeDelegate:self];
+    [[EMClient sharedClient].roomManager removeDelegate:self];
+    [[EMClient sharedClient].chatManager removeDelegate:self];
+
+}
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        [self initHelper];
+    }
+    return self;
+}
+
+#pragma mark - getter
+
+#pragma mark - init
+
+- (void)initHelper
+{
+    [[EMClient sharedClient] addDelegate:self delegateQueue:nil];
+    [[EMClient sharedClient].groupManager addDelegate:self delegateQueue:nil];
+    [[EMClient sharedClient].contactManager addDelegate:self delegateQueue:nil];
+    [[EMClient sharedClient].roomManager addDelegate:self delegateQueue:nil];
+    [[EMClient sharedClient].chatManager addDelegate:self delegateQueue:nil];
+    
+}
+
 
 #pragma mark - async Data
 
@@ -36,6 +69,7 @@ static ChatDemoHelper *helper = nil;
         // 从服务器获取推送属性（获取推送的信息）
         [[EMClient sharedClient] getPushOptionsFromServerWithError:&error];
     });
+    
 }
 
 - (void)asyncGroupFromServer
@@ -92,7 +126,7 @@ static ChatDemoHelper *helper = nil;
     [self.mainVC networkChanged:connectionState];
 }
 
-//
+// 自动登录失败时的回调
 - (void)autoLoginDidCompleteWithError:(EMError *)error
 {
     if (error) {
@@ -103,6 +137,7 @@ static ChatDemoHelper *helper = nil;
         UIView *view = self.mainVC.view;
         [MBProgressHUD showHUDAddedTo:view animated:YES];
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            // iOS专用，数据迁移到SDK3.0
             BOOL flag = [[EMClient sharedClient] migrateDatabaseToLatestSDK];
             if (flag) {
                 [self asyncGroupFromServer];
@@ -114,15 +149,17 @@ static ChatDemoHelper *helper = nil;
         });
     }
 }
-
+// 当前登录账号在其它设备登录时会接收到此回调
 - (void)userAccountDidLoginFromOtherDevice
 {
+    // 清除所有控制器并退出到登录界面
     [self _clearHelper];
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"prompt", @"Prompt") message:NSLocalizedString(@"loginAtOtherDevice", @"your login account has been in other places") delegate:self cancelButtonTitle:NSLocalizedString(@"ok", @"OK") otherButtonTitles:nil, nil];
     [alertView show];
     [[NSNotificationCenter defaultCenter] postNotificationName:KNOTIFICATION_LOGINCHANGE object:@NO];
 }
 
+// 当前登录账号已经被从服务器端删除时会收到该回调
 - (void)userAccountDidRemoveFromServer
 {
     [self _clearHelper];
@@ -130,7 +167,7 @@ static ChatDemoHelper *helper = nil;
     [alertView show];
     [[NSNotificationCenter defaultCenter] postNotificationName:KNOTIFICATION_LOGINCHANGE object:@NO];
 }
-
+// 服务被禁用
 - (void)userDidForbidByServer
 {
     [self _clearHelper];
@@ -156,13 +193,16 @@ static ChatDemoHelper *helper = nil;
 
 #pragma mark - private
 
+// 清除所有控制器并退出到登录界面
 - (void)_clearHelper
 {
+    // 所有控制器置空
     self.mainVC = nil;
     self.conversationListVC = nil;
     self.chatVC = nil;
     self.contactViewVC = nil;
     
+    // 退出登录
     [[EMClient sharedClient] logout:NO];
     
 #if DEMO_CALL == 1
